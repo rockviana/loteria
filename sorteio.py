@@ -31,19 +31,3 @@ def getDozensSorteadas():
         if dz:
             retorno.append(dz)
     return retorno
-
-loteria = Sorteio(60)
-
-#print loteria.getDozens()
-# for d in loteria.sorteio(Dozens=['10','20','30','40','50','60'], teimozinha=100000):
-#     if len(d) > 4:
-#         print d
-# print loteria.getPercent();
-
-for Dozens in getDozensSorteadas():
-    dados = loteria.sorteio(Dozens=Dozens, teimozinha=10000)
-    for d in dados:
-        if len(d) > 4:
-            print Dozens
-            print d
-            print loteria.getPercent()
